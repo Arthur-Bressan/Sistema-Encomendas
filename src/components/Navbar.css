@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #1b1b1b;
+    text-align: center;
+}
+
+.navbar__list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.navbar__item {
+    align-self: center;
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.navbar__list :nth-child(1) {
+    font: 700 1.2em 'Segoe UI', sans-serif;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    width: auto;
+    min-width: 100px;
+    grid-area: 'logo';
+}
+
+.navbar__list :nth-child(2) {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: .9em;
+    background-color: #333;
+    grid-area: 'categoria';
+}
+
+.navbar__list :nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    grid-area: 'user';
+}
+
+.navbar__list :nth-child(4) button {
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 70px;
+    height: 2.5em;
+}
+
+@media (max-width: 900px) {
+    .navbar__nav {
+        padding: 10px 10px;
+    }
+    .navbar__list {
+        gap: 0.5rem;
+    }
+    .navbar__item {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar__list {
+        display: grid;
+        grid-template-areas: 
+            "logo categoria button";
+        padding: 10px 2px;
+    }
+
+    .navbar__list :nth-child(1) {
+        width: 130px;
+    }
+
+    .navbar__list :nth-child(2) {
+        font-size: small;
+        min-width: 150px;
+    }
+
+    .navbar__list :nth-child(3) {
+        display: none;
+    }
+
+    .navbar__list :nth-child(4) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
