@@ -24,7 +24,12 @@ function App() {
                         <p>Itens que precisam ser pedidos.</p>
 
                         <div className='dashboard__content__card__info'>
-                            <h3>Fornecedor</h3>
+                            <h3>Fernanda Lima</h3>
+                            <section>
+                                <p>Pedido #12345</p>
+                                <p>Produto: Camiseta</p>
+                                <p>Quantidade: 2</p>
+                            </section>
                         </div>
                     </div>
                     <div className='dashboard__content__card'>
@@ -32,7 +37,13 @@ function App() {
                         <p>Itens a caminho.</p>
 
                         <div className='dashboard__content__card__info'>
-                            <h3>Fornecedor</h3>
+                            <h3>Camiseta</h3>
+                            <section>
+                                <p>Solicitado: 17/06/2025</p>
+                                <p>Previsão: 02/02/2025</p>
+                                <p>Quantidade: 2</p>
+                                <p>Pedido #12345</p>
+                            </section>
                         </div>
 
                     </div>
