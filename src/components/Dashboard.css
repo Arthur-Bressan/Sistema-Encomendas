@@ -78,7 +78,7 @@
 
 .dashboard__content__card__info {
 	display: flex;
-	flex-direction: column;
+	flex-direction: flex	;
 	text-align: start;
 	align-self: start;
 	border-radius: 8px;
@@ -90,4 +90,32 @@
 	width: 100%;
 	background-color: #1b1b1b;
 	border-color: #595959;
+}
+.dashboard__content__card__info aside {
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.dashboard__content__card__info aside p {
+	font-size: 14px;
+	color:rgb(223, 223, 223)
+}
+
+.dashboard__content__card__info .status {
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px;
+	border-radius: 20px;
+	background-color: #121212;
+}
+
+.dashboard__content__card__info #active{
+	background-color: #52a51a;
+}
+
+.dashboard__content__card__info #waiting {
+	background-color: #e3b04b;
 }
